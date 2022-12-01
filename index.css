@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+#Logo{
+    height: 20px;
+}
+#searchbar{
+    display: flex;
+    flex-grow: 1;
+    margin: 0 2rem 0 4rem;
+    /* border: 1px solid red; */
+    justify-content: center;
+}
+input{
+    width: 80%;
+    font-size: inherit;
+    padding: .4em;
+    border: 1px solid #777;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+input:focus{
+    outline:none;
+}
+#results{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    gap: 5%;
+    margin-top: 5%;
+    margin-left: 5%;
+    cursor: pointer;
+}
+button{
+    display: flex;
+    align-items: center;
+    padding: 0 1.25rem;
+    border: 1px solid #777;
+    background-color: #F8F8F8;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #F0F0F0;
+}
+#navbarIcons{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: center;
+    gap: 1.5rem;
+    /* border: 1px solid red; */
+}
+#account{
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    background-color: #AAA;
+}
